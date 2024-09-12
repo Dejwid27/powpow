@@ -1,9 +1,10 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static <Linkedlist> void main(String[] args) {
         System.out.println("Hello world!");
         //tablica
         /*
@@ -62,11 +63,14 @@ public class Main {
         }
         System.out.println("Zbior liczb losowych");
         System.out.println(zbiorliczbLosowych);
-
-
-
-
-
+        //lista liczb wczytywana z klawiatury
+        Scanner Klawiatura = new Scanner(System.in);
+        Linkedlist<Integer> listaliczbKlawiatury = new Linkedlist<>();
+        System.out.println("Podaj 6 liczb");
+        for (int i = 0; i <6; i++) {
+          int wartosc = Klawiatura.nextInt();
+          listaliczbKlawiatury.add(wartosc);
+        }
 
 
 
